@@ -1,0 +1,30 @@
+/* Exercise 2: Corrected CSS Code - All Mistakes Fixed */
+
+/* Fixed Mistake 1: Added semicolon after color: red */
+/* Fixed Mistake 2: Added fallback fonts to font-family */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    background: ivory;
+    color: red;
+}
+
+h1, h2, h3 {
+    color: #ff0000;
+    font-size: 2.5em;
+    margin: 20px 0px 20px 0px;
+}
+
+/* Fixed Mistake 3: Added semicolon after box-sizing: border-box */
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: underline;
+}
