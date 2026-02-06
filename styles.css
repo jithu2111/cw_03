@@ -1,0 +1,309 @@
+/* External stylesheet for CW03 - CSS Basics Assignment */
+
+/* Exercise 1: Body styling with dark red text */
+body {
+    color: darkred;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Header styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    color: #ecf0f1;
+}
+
+/* Main content area */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section styling */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #34495e;
+    margin-top: 20px;
+}
+
+/* Exercise 2: Answer box with box-shadow */
+.answer-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    margin: 20px 0;
+}
+
+.answer-box ol {
+    line-height: 2;
+}
+
+.answer-box li {
+    margin-bottom: 15px;
+}
+
+.answer-box code {
+    background-color: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #e74c3c;
+}
+
+/* Code example box */
+.code-example {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.code-example pre {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.code-example code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Info box styling */
+.info-box {
+    background-color: #e8f4f8;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.info-box code {
+    background-color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #e74c3c;
+}
+
+.info-box ul {
+    line-height: 1.8;
+}
+
+/* Exercise 3: Song Lyrics Styling */
+.lyrics-container {
+    background-color: chocolate;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.artist {
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: moccasin;
+    margin: 5px 0;
+}
+
+.song-title {
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: khaki;
+    margin: 5px 0;
+}
+
+.album {
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: khaki;
+    margin: 5px 0;
+}
+
+.year {
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: ivory;
+    margin: 5px 0 20px 0;
+}
+
+.verse {
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: gold;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chorus {
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: gold;
+    margin-left: 4cm;
+    margin-right: 4cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Exercise 5: Timetable styling */
+.timetable-container {
+    margin: 20px 0;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.timetable thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.timetable th {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #34495e;
+}
+
+.timetable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.timetable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.time {
+    background-color: #ecf0f1;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Color-coded subjects */
+.subject-math {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.subject-science {
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+}
+
+.subject-english {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+}
+
+.subject-history {
+    background-color: #f39c12;
+    color: white;
+    font-weight: bold;
+}
+
+.subject-pe {
+    background-color: #9b59b6;
+    color: white;
+    font-weight: bold;
+}
+
+.subject-cs {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+}
+
+.subject-art {
+    background-color: #e91e63;
+    color: white;
+    font-weight: bold;
+}
+
+.subject-study {
+    background-color: #95a5a6;
+    color: white;
+    font-weight: bold;
+}
+
+.break {
+    background-color: #ffeaa7;
+    color: #2c3e50;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lunch {
+    background-color: #fdcb6e;
+    color: #2c3e50;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
