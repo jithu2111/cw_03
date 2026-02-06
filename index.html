@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW03 - CSS Basics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CW03 - CSS Basics Assignment</h1>
+    </header>
+
+    <main>
+        <!-- Exercise 1: External Style Sheet -->
+        <section id="exercise1">
+            <h2>Exercise 1: External Style Sheet - Text Color</h2>
+            <p>This paragraph demonstrates the dark red text color applied via external CSS.</p>
+            <div class="info-box">
+                <h3>Implementation Details</h3>
+                <p>An external stylesheet (styles.css) has been created to change all text within the body element to dark red.</p>
+                <p>The stylesheet is linked in the head section using: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></p>
+            </div>
+        </section>
+
+        <!-- Exercise 2: Debugging CSS -->
+        <section id="exercise2">
+            <h2>Exercise 2: Debugging CSS Code</h2>
+            <p>Find and fix 3 common CSS mistakes in the provided code.</p>
+
+            <div class="answer-box">
+                <h3>Identified Mistakes:</h3>
+                <ol>
+                    <li>
+                        <strong>Mistake 1:</strong> Missing semicolon after <code>color: red</code> in the body rule.
+                        <br><strong>Fix:</strong> Add semicolon: <code>color: red;</code>
+                    </li>
+                    <li>
+                        <strong>Mistake 2:</strong> The font-family property lacks fallback fonts.
+                        <br><strong>Fix:</strong> Add fallback fonts: <code>font-family: "Times New Roman", Times, serif;</code>
+                    </li>
+                    <li>
+                        <strong>Mistake 3:</strong> Missing semicolon after <code>box-sizing: border-box</code> in the .container rule.
+                        <br><strong>Fix:</strong> Add semicolon: <code>box-sizing: border-box;</code>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="code-example">
+                <h3>Corrected CSS Code:</h3>
+                <pre><code>/* Corrected CSS */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    background: ivory;
+    color: red;
+}
+
+h1, h2, h3 {
+    color: #ff0000;
+    font-size: 2.5em;
+    margin: 20px 0px 20px 0px;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: underline;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Exercise 3: Song Lyrics Styling -->
+        <section id="exercise3">
+            <h2>Exercise 3: Song Lyrics Styling</h2>
+            <div class="lyrics-container">
+                <p class="artist">The Weeknd</p>
+                <p class="song-title">Blinding Lights</p>
+                <p class="album">After Hours</p>
+                <p class="year">2020</p>
+
+                <p class="verse">
+                    I been tryna call, I been on my own for long enough<br>
+                    Maybe you can show me how to love, maybe
+                </p>
+
+                <p class="chorus">
+                    I'm going through a crisis, I thought I'd see the light<br>
+                    But there's nothing but blinding lights
+                </p>
+
+                <p class="verse">
+                    I'm looking for something that I can't see<br>
+                    Maybe you can show it to me, maybe
+                </p>
+
+                <p class="chorus">
+                    I'm going through a crisis, I thought I'd see the light<br>
+                    But there's nothing but blinding lights
+                </p>
+            </div>
+        </section>
+
+        <!-- Exercise 4: External Stylesheet -->
+        <section id="exercise4">
+            <h2>Exercise 4: External Stylesheet Creation</h2>
+            <div class="info-box">
+                <h3>External Stylesheet Implementation</h3>
+                <p>An external stylesheet <code>lyrics.css</code> has been created with the following classes:</p>
+                <ul>
+                    <li><strong>.artist:</strong> 14pt, Arial, Bold, Moccasin</li>
+                    <li><strong>.song-title:</strong> 14pt, Arial, Normal, Khaki</li>
+                    <li><strong>.album:</strong> 12pt, Arial, Normal, Khaki</li>
+                    <li><strong>.year:</strong> 12pt, Arial, Bold, Ivory</li>
+                    <li><strong>.verse:</strong> 14pt, Trebuchet MS, Bold, Gold, margin-left 2cm, margin-right 2cm</li>
+                    <li><strong>.chorus:</strong> 14pt, Trebuchet MS, Bold & Italic, Gold, margin-left 4cm, margin-right 4cm</li>
+                </ul>
+                <p>To use this stylesheet, link it in the HTML: <code>&lt;link rel="stylesheet" href="lyrics.css"&gt;</code></p>
+            </div>
+        </section>
+
+        <!-- Exercise 5: School Website Design -->
+        <section id="exercise5">
+            <h2>Exercise 5: School Website Design - Timetable</h2>
+            <div class="timetable-container">
+                <h3>Weekly Class Schedule</h3>
+                <table class="timetable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time">9:00 - 10:00</td>
+                            <td class="subject-math">Mathematics</td>
+                            <td class="subject-science">Physics</td>
+                            <td class="subject-math">Mathematics</td>
+                            <td class="subject-science">Chemistry</td>
+                            <td class="subject-english">English</td>
+                        </tr>
+                        <tr>
+                            <td class="time">10:00 - 11:00</td>
+                            <td class="subject-science">Physics</td>
+                            <td class="subject-math">Mathematics</td>
+                            <td class="subject-english">English</td>
+                            <td class="subject-math">Mathematics</td>
+                            <td class="subject-science">Biology</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:00 - 11:15</td>
+                            <td colspan="5" class="break">Morning Break</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:15 - 12:15</td>
+                            <td class="subject-english">English</td>
+                            <td class="subject-history">History</td>
+                            <td class="subject-science">Chemistry</td>
+                            <td class="subject-english">English</td>
+                            <td class="subject-math">Mathematics</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:15 - 1:15</td>
+                            <td class="subject-history">Geography</td>
+                            <td class="subject-pe">Physical Education</td>
+                            <td class="subject-history">History</td>
+                            <td class="subject-pe">Physical Education</td>
+                            <td class="subject-art">Art</td>
+                        </tr>
+                        <tr>
+                            <td class="time">1:15 - 2:00</td>
+                            <td colspan="5" class="lunch">Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <td class="time">2:00 - 3:00</td>
+                            <td class="subject-cs">Computer Science</td>
+                            <td class="subject-english">English Literature</td>
+                            <td class="subject-cs">Computer Science</td>
+                            <td class="subject-history">Geography</td>
+                            <td class="subject-study">Study Hall</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CW03 Assignment - CSS Basics</p>
+    </footer>
+</body>
+</html>
