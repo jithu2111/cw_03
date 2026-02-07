@@ -1,0 +1,302 @@
+/* timetable.css - External stylesheet for School Timetable (Exercise 5) */
+
+/* CSS Variables for color scheme */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --bg-light: #ecf0f1;
+    --text-dark: #2c3e50;
+
+    /* Subject colors */
+    --math-color: #3498db;
+    --science-color: #2ecc71;
+    --english-color: #e74c3c;
+    --history-color: #f39c12;
+    --pe-color: #9b59b6;
+    --cs-color: #1abc9c;
+    --art-color: #e91e63;
+    --study-color: #95a5a6;
+
+    /* Break colors */
+    --break-color: #ffeaa7;
+    --lunch-color: #fdcb6e;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+/* Navigation styling */
+nav {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Main content area */
+main {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Timetable container */
+.timetable-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+/* Table styling */
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 20px 0;
+}
+
+.timetable thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.timetable th {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: 1px solid #34495e;
+}
+
+.timetable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 0.95em;
+}
+
+.timetable tbody tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+}
+
+/* Time column styling */
+.time {
+    background-color: var(--bg-light);
+    font-weight: bold;
+    color: var(--text-dark);
+    white-space: nowrap;
+}
+
+/* Color-coded subjects */
+.subject-math {
+    background-color: var(--math-color);
+    color: white;
+    font-weight: bold;
+}
+
+.subject-science {
+    background-color: var(--science-color);
+    color: white;
+    font-weight: bold;
+}
+
+.subject-english {
+    background-color: var(--english-color);
+    color: white;
+    font-weight: bold;
+}
+
+.subject-history {
+    background-color: var(--history-color);
+    color: white;
+    font-weight: bold;
+}
+
+.subject-pe {
+    background-color: var(--pe-color);
+    color: white;
+    font-weight: bold;
+}
+
+.subject-cs {
+    background-color: var(--cs-color);
+    color: white;
+    font-weight: bold;
+}
+
+.subject-art {
+    background-color: var(--art-color);
+    color: white;
+    font-weight: bold;
+}
+
+.subject-study {
+    background-color: var(--study-color);
+    color: white;
+    font-weight: bold;
+}
+
+/* Break and lunch styling */
+.break {
+    background-color: var(--break-color);
+    color: var(--text-dark);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lunch {
+    background-color: var(--lunch-color);
+    color: var(--text-dark);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Legend styling */
+.legend {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.legend h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.legend-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legend-color {
+    width: 40px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .timetable th,
+    .timetable td {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+
+    .legend-items {
+        grid-template-columns: 1fr;
+    }
+}
