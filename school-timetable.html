@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - School Timetable</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+    <header>
+        <h1>Riverside High School</h1>
+        <p>Weekly Class Timetable - Spring 2026</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#timetable">Timetable</a></li>
+            <li><a href="#legend">Subject Legend</a></li>
+            <li><a href="index.html">Back to Main</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="timetable">
+            <h2>Weekly Class Schedule</h2>
+            <div class="timetable-container">
+                <table class="timetable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time">9:00 - 10:00</td>
+                            <td class="subject-math">Mathematics</td>
+                            <td class="subject-science">Physics</td>
+                            <td class="subject-math">Mathematics</td>
+                            <td class="subject-science">Chemistry</td>
+                            <td class="subject-english">English</td>
+                        </tr>
+                        <tr>
+                            <td class="time">10:00 - 11:00</td>
+                            <td class="subject-science">Physics</td>
+                            <td class="subject-math">Mathematics</td>
+                            <td class="subject-english">English</td>
+                            <td class="subject-math">Mathematics</td>
+                            <td class="subject-science">Biology</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:00 - 11:15</td>
+                            <td colspan="5" class="break">Morning Break</td>
+                        </tr>
+                        <tr>
+                            <td class="time">11:15 - 12:15</td>
+                            <td class="subject-english">English</td>
+                            <td class="subject-history">History</td>
+                            <td class="subject-science">Chemistry</td>
+                            <td class="subject-english">English</td>
+                            <td class="subject-math">Mathematics</td>
+                        </tr>
+                        <tr>
+                            <td class="time">12:15 - 1:15</td>
+                            <td class="subject-history">Geography</td>
+                            <td class="subject-pe">Physical Education</td>
+                            <td class="subject-history">History</td>
+                            <td class="subject-pe">Physical Education</td>
+                            <td class="subject-art">Art</td>
+                        </tr>
+                        <tr>
+                            <td class="time">1:15 - 2:00</td>
+                            <td colspan="5" class="lunch">Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <td class="time">2:00 - 3:00</td>
+                            <td class="subject-cs">Computer Science</td>
+                            <td class="subject-english">English Literature</td>
+                            <td class="subject-cs">Computer Science</td>
+                            <td class="subject-history">Geography</td>
+                            <td class="subject-study">Study Hall</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="legend" class="legend">
+            <h3>Subject Color Legend</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #3498db;"></div>
+                    <span>Mathematics</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2ecc71;"></div>
+                    <span>Science (Physics, Chemistry, Biology)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #e74c3c;"></div>
+                    <span>English</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #f39c12;"></div>
+                    <span>History / Geography</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #9b59b6;"></div>
+                    <span>Physical Education</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #1abc9c;"></div>
+                    <span>Computer Science</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #e91e63;"></div>
+                    <span>Art</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #95a5a6;"></div>
+                    <span>Study Hall</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Concepts Demonstrated</h2>
+            <ul style="line-height: 2; margin-left: 20px;">
+                <li><strong>External CSS:</strong> All styling is in <code>timetable.css</code> for consistent design</li>
+                <li><strong>CSS Variables:</strong> Color scheme defined using CSS custom properties</li>
+                <li><strong>HTML Tables:</strong> Structured data display with <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code></li>
+                <li><strong>CSS Classes:</strong> Different content types styled with specific classes</li>
+                <li><strong>Responsive Design:</strong> Media queries for mobile-friendly layout</li>
+                <li><strong>Color Coding:</strong> Visual organization using distinct colors for each subject</li>
+                <li><strong>Box Shadow:</strong> Depth and visual hierarchy with shadows</li>
+                <li><strong>Hover Effects:</strong> Interactive row highlighting on mouse hover</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Riverside High School - Exercise 5: School Website Design</p>
+    </footer>
+</body>
+</html>
