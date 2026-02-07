@@ -1,0 +1,77 @@
+/* lyrics.css - External stylesheet for song lyrics (Exercise 4) */
+
+/* Body styling with chocolate background */
+body {
+    background-color: chocolate;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Artist: 14pt, Arial, Bold, Moccasin */
+.artist {
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: moccasin;
+    margin: 5px 0;
+}
+
+/* Song Title: 14pt, Arial, Normal, Khaki */
+.song-title {
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: khaki;
+    margin: 5px 0;
+}
+
+/* Album: 12pt, Arial, Normal, Khaki */
+.album {
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: khaki;
+    margin: 5px 0;
+}
+
+/* Year: 12pt, Arial, Bold, Ivory */
+.year {
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: ivory;
+    margin: 5px 0 20px 0;
+}
+
+/* Verse: 14pt, Trebuchet MS, Bold, Gold, margin-left 2cm, margin-right 2cm */
+.verse {
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: gold;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Chorus: 14pt, Trebuchet MS, Bold & Italic, Gold, margin-left 4cm, margin-right 4cm */
+.chorus {
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: gold;
+    margin-left: 4cm;
+    margin-right: 4cm;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Optional: Container styling */
+.lyrics-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
